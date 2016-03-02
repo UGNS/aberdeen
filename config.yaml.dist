@@ -1,0 +1,16 @@
+# This will be mounted as /srv/pillar
+pillars: /path/to/salt-pillars.git
+
+# This will be mounted as /srv/salt/base
+states: /path/to/salt-states.git
+
+# This will be mounted as /srv/reactor
+reactors: /path/to/salt-reactors.git
+
+# These will be mounted under /srv/file_roots/<KEY>
+file_roots:
+  # This will be mounted as /srv/file_roots/repo
+  repo: /path/to/file_roots-repo.git
+
+minions:
+  ubuntu: True
